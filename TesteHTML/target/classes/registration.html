@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Online Assessment - Home Page</title>
+</head>
+<body>
+<form>
+    <h1>Registration Page</h1>
+    <br/>
+    <label>First Name: </label>
+    <input type="text" id=”firstname” required="required">
+    <!--only 1 non-alphabetic-->
+    <br/><br/>
+    <label>Last Name: </label>
+    <input type="text" id=”lastname” required="required">
+    <!--only 1 non-alphabetic-->
+    <br/><br/>
+    <label>Email ID: </label>
+    <input type="email" id="email" required="required">
+    <br/><br/>
+    <label>Password: </label>
+    <input type="password" id="password" min="8" required="required">
+    <!--min 8 char-->
+    <br/><br/>
+    <input type="submit" id="register" value="REGISTER">
+</form>
+</body>
+</html>

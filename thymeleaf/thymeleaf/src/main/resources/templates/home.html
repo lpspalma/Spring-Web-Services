@@ -1,0 +1,11 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1 th:text="|Hello, ${model.username}|">Hello World.</h1>
+<br>
+<p><span th:text="${model.username}"></span>, what do you want to do?</p>
+<!--<a th:href="@{/profile?id=}+${model.id}" href="profile.html?id=userId">Profile</a>-->
+<!--<a th:href="@{/profile?id=${model.id}}" href="profile.html?id=userId">Profile</a>-->
+<a th:href="@{/profile(id=${model.id}, trial=1)}" href="profile.html?id=userId">Profile</a>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Online Assessment - Home Page</title>
+</head>
+<body>
+<form method="post" th:action="@{/login}">
+    <h1>Welcome to Online Assessments </h1>
+    <h2>Login</h2>
+    <br/>
+    <label>Email ID: </label>
+    <input type="email" id="email" required>
+    <br/><br/>
+    <label>Password: </label>
+    <input type="password" id="password" required>
+    <br/><br/>
+    <input type="submit" id="login" value="LOGIN">
+    <br/><br/>
+    <label>New User? <a href="/registration.html" th:href="@{/registration.html}">
+        register here</a></label>
+</form>
+</body>
+</html>

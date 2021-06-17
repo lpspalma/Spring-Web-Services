@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create an account</title>
+</head>
+
+<body>
+
+<div>
+
+    <form method="POST" action="/userlist" th:object="${user}">
+        <h2>Create your account</h2>
+        <div>
+            <input type="text" placeholder="First Name" autofocus="true" th:field="${user.firstName}">
+        </div>
+
+        <div>
+            <input type="text" placeholder="Last Name" autofocus="true" th:field="${user.lastName}">
+        </div>
+        <div>
+            <input type="text" placeholder="Username" autofocus="true" th:field="${user.username}">
+        </div>
+        <div>
+            <input type="password" placeholder="Password" th:field="${user.password}">
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</div>
+
+</body>
+</html>
